@@ -12,3 +12,21 @@
     heading: number | null;
     speed: number | null;
   }
+
+  export interface WeatherData {
+    main: {
+      temp: number;
+      humidity: number;
+    };
+    weather: {
+      description: string;
+    }[];
+    wind: {
+      speed: number;
+    };
+    coord?: {
+      lat: number;
+      lon: number;
+    };
+  }
+  

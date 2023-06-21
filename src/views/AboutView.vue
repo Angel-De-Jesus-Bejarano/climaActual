@@ -1,5 +1,11 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>DOCUMENTACION</h1>
+    <P>PRONTO</P>
   </div>
 </template>
+ <style scoped>
+  .about{
+    color: white;
+  }
+</style>

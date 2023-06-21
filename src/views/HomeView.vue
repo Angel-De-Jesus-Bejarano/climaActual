@@ -1,7 +1,7 @@
 <template>
-    <MyCalculadora />
+    <MyWeather />
 </template>
 
 <script lang="ts" setup>
-  import MyCalculadora from '@/components/MyCalculadora.vue';
+  import MyWeather from '@/components/MyWeather.vue';
 </script>

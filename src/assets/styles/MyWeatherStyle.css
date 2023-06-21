@@ -1,0 +1,157 @@
+.box-clima {
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .card-clima {
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .card-clima h1 {
+    color: white;
+  }
+  
+  .buscador {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  
+  .buscador input {
+    width: 320px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    border: 3px solid black;
+  }
+  
+  .buscador button {
+    border: none;
+    background-color: transparent;
+  }
+  
+  button img {
+    width: 50px;
+    cursor: pointer;
+  }
+  
+  .estado-clima {
+    width: 370px;
+    height: 380px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  
+  .estado-clima img {
+    width: 80px;
+  }
+  
+  .estado-clima p {
+    font-size: 20px;
+  }
+  
+  .datos-extra {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  .datos-extra .box-extra {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .text-extra p {
+    font-size: 15px;
+  
+  }
+  
+  
+  /*mobile desing*/
+  @media (max-width: 400px) {
+    .box-clima {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .card-clima {
+      flex: none;
+      max-width: 100%;
+    }
+  
+    .card-clima h1 {
+      font-size: 25px;
+    }
+  
+    .card-clima .buscador {
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: transparent;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+  
+    .buscador input {
+      width: 300px;
+      height: 50px;
+      font-size: 15px;
+  
+    }
+  
+    .buscador button {
+      background-color: white;
+      padding: 5px;
+      border-radius: 100%;
+      display: flex;
+  
+    }
+  
+    .buscador button img {
+      width: 40px;
+    }
+  
+  
+    .estado-clima {
+      width: 300px;
+      height: 300px;
+      box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+    }
+  
+    .estado-climaimg {
+      width: 60px;
+    }
+  
+    .estado-clima p {
+      font-size: 15px;
+    }
+  
+    .datos-extra {
+      width: 250px;
+    }
+  
+    .text-extra p {
+  
+      font-size: 10px;
+  
+    }
+
+  }

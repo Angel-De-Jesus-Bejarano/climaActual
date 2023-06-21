@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">CLIMA</router-link>  
+    <router-link to="/about">DOCUMENTACION</router-link>
     
   </nav>
   <router-view/>
@@ -12,28 +12,42 @@ html {
   box-sizing: border-box;
   background-color: #202020;
 }
+
+body{
+  margin: 0;
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  
 }
 
 nav {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
   padding: 30px;
+  margin: auto;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    font-size: 20px;
+    color: #babcbe;
+    text-decoration: none;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #ffee00;
     }
+  }
+}
+@media (max-width: 400px){
+  nav{
+    width: 100%;
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 </style>
